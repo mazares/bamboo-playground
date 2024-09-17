@@ -3,5 +3,49 @@
     height: 100vh;
     background: #333;
     color: #ddd;
-    place-content: center;
+    justify-content: center;
+}
+
+.Header,
+.Content,
+.Footer {
+    display: grid;
+    padding: 1rem;
+    width: 90vw;
+    border: 1px solid red;
+}
+
+.Header {
+    height: 20vh;
+    align-self: flex-start;
+}
+
+.Content {
+    height: 60vh;
+    align-self: center;
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid red;
+    aspect-ratio: 1/1.2;
+    border-radius: 15px;
+    background: #444;
+}
+
+.Cards {
+    display: grid;
+    border: 1px solid red;
+    overflow-y: auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.Footer {
+    height: 10vh;
+    align-self: flex-end;
 }
