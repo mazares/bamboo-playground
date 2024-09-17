@@ -1,0 +1,30 @@
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+  animation: cross__slices 0.5s forwards;
+}
+
+.hamburger__slice {
+  width: 1.5rem;
+  height: 0.2rem;
+  margin: 0.2rem;
+  background-color: currentColor;
+}
+
+@keyframes cross__slices {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}

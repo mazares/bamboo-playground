@@ -4,7 +4,7 @@ import Card from "../card/Card";
 export default function Content() {
   const cards = [];
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 100; i++) {
     cards.push(<Card key={i} />);
   }
 
